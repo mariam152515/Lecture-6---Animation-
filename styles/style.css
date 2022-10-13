@@ -1,0 +1,119 @@
+
+.galaxy-animation{
+	position: relative;
+  width: 100%;
+  height: 100%;
+  
+	
+}
+.bodybackground{
+    width: 100%;
+    height: 100%x;
+    z-index: 1; 
+    position: absolute;
+}
+.comet{
+  width: 200px;
+  animation-name: cometmove;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  z-index: 2;
+  position: absolute;
+}
+@keyframes cometmove{
+  0% {top: 0px; right: 0px; }
+  25% {top: 250px; right: 500px; }
+  100% {top:600px; right: 800px;}
+}
+
+.alien3{
+  height: 60px;
+  animation-name: alien3;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-delay: 10s;
+  animation-timing-function: ease-out;
+  position: absolute;
+  z-index: 3;
+}
+@keyframes alien3{
+  from {left: 0; top: 70px}
+  to{left: 1300px; top: 70px}
+}
+
+.blackhole {
+  width: 300px;
+  z-index: 4;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 0;
+  margin-top: 0;
+  animation-name: blackholemove;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blackholemove{
+  0% {transform:rotate(0deg);}
+  25% {transform:rotate(100deg);}
+  50% {transform:rotate(200deg);}
+  70% {transform:rotate(300deg);}
+  80% {transform:rotate(400deg);}
+  100% {transform:rotate(500deg);}
+
+}
+
+.space-ship{
+  width: 150px;
+  position: absolute;
+  z-index: 6;
+  animation-name: space-ship-move;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+  animation-timing-function: ease-in;
+  animation-direction: alternate;
+}
+
+@keyframes space-ship-move{
+  0% {top: 50px; right: 50px;}
+  25% {top: 400px; right: 150px;}
+  50% {top: 450px; right: 150px;}
+  75% {top: 300px; right: 200px;}
+  100% {top: 800px; right: 800px; transform: rotate(360deg); }
+}
+
+.astronaut{
+  width: 150px;
+  position: absolute;
+  z-index: 6;
+  animation-name: astronaut-move;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+}
+
+@keyframes astronaut-move{
+  0% {top: 0px; left: 500px; transform: rotate(0deg);}
+  25% {top: 100px; left: 500px;}
+  50% {top: 200px; left: 500px;}
+  75% {top: 250px; left: 500px;}
+  100% {top: 250px; left: 500px;transform: rotate(360deg); }
+}
+.solarsystem{
+  width: 100px;
+  position: absolute;
+  z-index: 7;
+  animation-name: solarsystem;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+
+}
+
+@keyframes solarsystem{
+  0%{top: 500px; left: 150px; transform: rotate(0deg);}
+  50% {top: 500px; left: 150px; transform: rotate(180deg);}
+  100% { top:500px; left: 150px;transform: rotate(360deg); }
+}
